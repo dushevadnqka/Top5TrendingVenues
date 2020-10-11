@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="181" id="KGk-i7-Jjw" customClass="Top5VenuesCell" customModule="Top5TrendingVenues" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f6O-p2-7dm">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="181"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-Zt-FxV">
+                                <rect key="frame" x="0.0" y="0.0" width="354" height="81"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEO-AD-9LA">
+                                <rect key="frame" x="0.0" y="81" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kVT-9g-jfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="IEO-AD-9LA" firstAttribute="top" secondItem="Mt0-Zt-FxV" secondAttribute="bottom" id="0dj-PI-PcC"/>
+                            <constraint firstItem="IEO-AD-9LA" firstAttribute="top" secondItem="Mt0-Zt-FxV" secondAttribute="bottom" id="76p-Ak-mwU"/>
+                            <constraint firstItem="Mt0-Zt-FxV" firstAttribute="leading" secondItem="f6O-p2-7dm" secondAttribute="leading" id="BD2-jP-NnJ"/>
+                            <constraint firstAttribute="bottom" secondItem="IEO-AD-9LA" secondAttribute="bottom" id="GCn-Fo-tsB"/>
+                            <constraint firstAttribute="trailing" secondItem="IEO-AD-9LA" secondAttribute="trailing" id="KQO-xQ-qje"/>
+                            <constraint firstAttribute="trailing" secondItem="Mt0-Zt-FxV" secondAttribute="trailing" id="L3c-zh-rBV"/>
+                            <constraint firstItem="Mt0-Zt-FxV" firstAttribute="top" secondItem="f6O-p2-7dm" secondAttribute="top" id="ZLe-Ko-ocV"/>
+                            <constraint firstItem="IEO-AD-9LA" firstAttribute="leading" secondItem="f6O-p2-7dm" secondAttribute="leading" id="Zyj-HF-FXC"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="tintColor" name="AccentColor"/>
+                <constraints>
+                    <constraint firstItem="f6O-p2-7dm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KKL-fp-csW"/>
+                    <constraint firstAttribute="bottom" secondItem="f6O-p2-7dm" secondAttribute="bottom" id="geo-HN-6Ks"/>
+                    <constraint firstItem="f6O-p2-7dm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mIF-Vy-MTh"/>
+                    <constraint firstAttribute="trailing" secondItem="f6O-p2-7dm" secondAttribute="trailing" id="pJn-oQ-wbF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="tintColor" systemColor="systemTealColor"/>
+            <connections>
+                <outlet property="contentView" destination="H2p-sc-9uM" id="rEz-cA-5Kl"/>
+                <outlet property="contentViewWrapper" destination="H2p-sc-9uM" id="Xgr-Nq-6xw"/>
+                <outlet property="venueAddress" destination="IEO-AD-9LA" id="Ee3-3N-OwG"/>
+                <outlet property="venueTitle" destination="Mt0-Zt-FxV" id="zPP-Z9-l1B"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="65.959821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

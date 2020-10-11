@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4645EE13252F49B700C53C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE12252F49B700C53C8C /* AppDelegate.swift */; };
+		4645EE15252F49B700C53C8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE14252F49B700C53C8C /* SceneDelegate.swift */; };
+		4645EE17252F49B700C53C8C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE16252F49B700C53C8C /* MainViewController.swift */; };
+		4645EE1A252F49B700C53C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645EE18252F49B700C53C8C /* Main.storyboard */; };
+		4645EE1D252F49B700C53C8C /* Top5TrendingVenues.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE1B252F49B700C53C8C /* Top5TrendingVenues.xcdatamodeld */; };
+		4645EE1F252F49BB00C53C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4645EE1E252F49BB00C53C8C /* Assets.xcassets */; };
+		4645EE22252F49BB00C53C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4645EE20252F49BB00C53C8C /* LaunchScreen.storyboard */; };
+		4645EE2D252F49BC00C53C8C /* Top5TrendingVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE2C252F49BC00C53C8C /* Top5TrendingVenuesTests.swift */; };
+		4645EE38252F49BC00C53C8C /* Top5TrendingVenuesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE37252F49BC00C53C8C /* Top5TrendingVenuesUITests.swift */; };
+		4645EE952530A52400C53C8C /* Top5VenuesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EE932530A52400C53C8C /* Top5VenuesCell.swift */; };
+		4645EE962530A52400C53C8C /* Top5VenuesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4645EE942530A52400C53C8C /* Top5VenuesCell.xib */; };
+		4645EEA82530C99300C53C8C /* MyCustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEA72530C99300C53C8C /* MyCustomActivityIndicator.swift */; };
+		4645EEB02530D92800C53C8C /* AboutSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEAF2530D92800C53C8C /* AboutSegmentView.swift */; };
+		4645EEB52530E7A800C53C8C /* LabelWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEB42530E7A700C53C8C /* LabelWithPadding.swift */; };
+		4645EEBD2530EB8100C53C8C /* Top5TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEBC2530EB8100C53C8C /* Top5TableView.swift */; };
+		4645EEC22531046700C53C8C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEC12531046600C53C8C /* HttpRequest.swift */; };
+		4645EEC7253104CE00C53C8C /* GetTop5VenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EEC6253104CE00C53C8C /* GetTop5VenuesRequest.swift */; };
+		4645EECC2531221100C53C8C /* ApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4645EECB2531221000C53C8C /* ApiResponseModel.swift */; };
+		46960A3C253246F100ED7F4E /* VenueTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46960A3B253246F100ED7F4E /* VenueTableModel.swift */; };
+		46960A422533414700ED7F4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46960A412533414700ED7F4E /* Constants.swift */; };
+		46960A4825334D0800ED7F4E /* ApiResponseModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46960A4725334D0800ED7F4E /* ApiResponseModelTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4645EE29252F49BC00C53C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4645EE07252F49B700C53C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4645EE0E252F49B700C53C8C;
+			remoteInfo = Top5TrendingVenues;
+		};
+		4645EE34252F49BC00C53C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4645EE07252F49B700C53C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4645EE0E252F49B700C53C8C;
+			remoteInfo = Top5TrendingVenues;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4645EE0F252F49B700C53C8C /* Top5TrendingVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top5TrendingVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4645EE12252F49B700C53C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4645EE14252F49B700C53C8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4645EE16252F49B700C53C8C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4645EE19252F49B700C53C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4645EE1C252F49B700C53C8C /* Top5TrendingVenues.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Top5TrendingVenues.xcdatamodel; sourceTree = "<group>"; };
+		4645EE1E252F49BB00C53C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4645EE21252F49BB00C53C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4645EE23252F49BB00C53C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4645EE28252F49BC00C53C8C /* Top5TrendingVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Top5TrendingVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4645EE2C252F49BC00C53C8C /* Top5TrendingVenuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5TrendingVenuesTests.swift; sourceTree = "<group>"; };
+		4645EE2E252F49BC00C53C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4645EE33252F49BC00C53C8C /* Top5TrendingVenuesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Top5TrendingVenuesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4645EE37252F49BC00C53C8C /* Top5TrendingVenuesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5TrendingVenuesUITests.swift; sourceTree = "<group>"; };
+		4645EE39252F49BC00C53C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4645EE932530A52400C53C8C /* Top5VenuesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5VenuesCell.swift; sourceTree = "<group>"; };
+		4645EE942530A52400C53C8C /* Top5VenuesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top5VenuesCell.xib; sourceTree = "<group>"; };
+		4645EEA72530C99300C53C8C /* MyCustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomActivityIndicator.swift; sourceTree = "<group>"; };
+		4645EEAF2530D92800C53C8C /* AboutSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegmentView.swift; sourceTree = "<group>"; };
+		4645EEB42530E7A700C53C8C /* LabelWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithPadding.swift; sourceTree = "<group>"; };
+		4645EEBC2530EB8100C53C8C /* Top5TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top5TableView.swift; sourceTree = "<group>"; };
+		4645EEC12531046600C53C8C /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		4645EEC6253104CE00C53C8C /* GetTop5VenuesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTop5VenuesRequest.swift; sourceTree = "<group>"; };
+		4645EECB2531221000C53C8C /* ApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModel.swift; sourceTree = "<group>"; };
+		46960A3B253246F100ED7F4E /* VenueTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableModel.swift; sourceTree = "<group>"; };
+		46960A412533414700ED7F4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		46960A4725334D0800ED7F4E /* ApiResponseModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseModelTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4645EE0C252F49B700C53C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE25252F49BC00C53C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE30252F49BC00C53C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4645EE06252F49B700C53C8C = {
+			isa = PBXGroup;
+			children = (
+				4645EE11252F49B700C53C8C /* Top5TrendingVenues */,
+				4645EE2B252F49BC00C53C8C /* Top5TrendingVenuesTests */,
+				4645EE36252F49BC00C53C8C /* Top5TrendingVenuesUITests */,
+				4645EE10252F49B700C53C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4645EE10252F49B700C53C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4645EE0F252F49B700C53C8C /* Top5TrendingVenues.app */,
+				4645EE28252F49BC00C53C8C /* Top5TrendingVenuesTests.xctest */,
+				4645EE33252F49BC00C53C8C /* Top5TrendingVenuesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4645EE11252F49B700C53C8C /* Top5TrendingVenues */ = {
+			isa = PBXGroup;
+			children = (
+				4645EE5D252F945D00C53C8C /* Http */,
+				4645EE53252F5ED700C53C8C /* Controller */,
+				4645EE52252F5ED000C53C8C /* View */,
+				4645EE51252F5EC300C53C8C /* Model */,
+				4645EE12252F49B700C53C8C /* AppDelegate.swift */,
+				4645EE20252F49BB00C53C8C /* LaunchScreen.storyboard */,
+				4645EE18252F49B700C53C8C /* Main.storyboard */,
+				4645EE14252F49B700C53C8C /* SceneDelegate.swift */,
+				4645EE1E252F49BB00C53C8C /* Assets.xcassets */,
+				4645EE23252F49BB00C53C8C /* Info.plist */,
+				4645EE1B252F49B700C53C8C /* Top5TrendingVenues.xcdatamodeld */,
+				46960A412533414700ED7F4E /* Constants.swift */,
+			);
+			path = Top5TrendingVenues;
+			sourceTree = "<group>";
+		};
+		4645EE2B252F49BC00C53C8C /* Top5TrendingVenuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				46960A4725334D0800ED7F4E /* ApiResponseModelTest.swift */,
+				4645EE2C252F49BC00C53C8C /* Top5TrendingVenuesTests.swift */,
+				4645EE2E252F49BC00C53C8C /* Info.plist */,
+			);
+			path = Top5TrendingVenuesTests;
+			sourceTree = "<group>";
+		};
+		4645EE36252F49BC00C53C8C /* Top5TrendingVenuesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4645EE37252F49BC00C53C8C /* Top5TrendingVenuesUITests.swift */,
+				4645EE39252F49BC00C53C8C /* Info.plist */,
+			);
+			path = Top5TrendingVenuesUITests;
+			sourceTree = "<group>";
+		};
+		4645EE51252F5EC300C53C8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4645EECB2531221000C53C8C /* ApiResponseModel.swift */,
+				46960A3B253246F100ED7F4E /* VenueTableModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4645EE52252F5ED000C53C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4645EE932530A52400C53C8C /* Top5VenuesCell.swift */,
+				4645EE942530A52400C53C8C /* Top5VenuesCell.xib */,
+				4645EEA72530C99300C53C8C /* MyCustomActivityIndicator.swift */,
+				4645EEAF2530D92800C53C8C /* AboutSegmentView.swift */,
+				4645EEB42530E7A700C53C8C /* LabelWithPadding.swift */,
+				4645EEBC2530EB8100C53C8C /* Top5TableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4645EE53252F5ED700C53C8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4645EE16252F49B700C53C8C /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4645EE5D252F945D00C53C8C /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4645EEC12531046600C53C8C /* HttpRequest.swift */,
+				4645EEC6253104CE00C53C8C /* GetTop5VenuesRequest.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4645EE0E252F49B700C53C8C /* Top5TrendingVenues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4645EE3C252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenues" */;
+			buildPhases = (
+				4645EE0B252F49B700C53C8C /* Sources */,
+				4645EE0C252F49B700C53C8C /* Frameworks */,
+				4645EE0D252F49B700C53C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Top5TrendingVenues;
+			productName = Top5TrendingVenues;
+			productReference = 4645EE0F252F49B700C53C8C /* Top5TrendingVenues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4645EE27252F49BC00C53C8C /* Top5TrendingVenuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4645EE3F252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenuesTests" */;
+			buildPhases = (
+				4645EE24252F49BC00C53C8C /* Sources */,
+				4645EE25252F49BC00C53C8C /* Frameworks */,
+				4645EE26252F49BC00C53C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4645EE2A252F49BC00C53C8C /* PBXTargetDependency */,
+			);
+			name = Top5TrendingVenuesTests;
+			productName = Top5TrendingVenuesTests;
+			productReference = 4645EE28252F49BC00C53C8C /* Top5TrendingVenuesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4645EE32252F49BC00C53C8C /* Top5TrendingVenuesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4645EE42252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenuesUITests" */;
+			buildPhases = (
+				4645EE2F252F49BC00C53C8C /* Sources */,
+				4645EE30252F49BC00C53C8C /* Frameworks */,
+				4645EE31252F49BC00C53C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4645EE35252F49BC00C53C8C /* PBXTargetDependency */,
+			);
+			name = Top5TrendingVenuesUITests;
+			productName = Top5TrendingVenuesUITests;
+			productReference = 4645EE33252F49BC00C53C8C /* Top5TrendingVenuesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4645EE07252F49B700C53C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					4645EE0E252F49B700C53C8C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					4645EE27252F49BC00C53C8C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4645EE0E252F49B700C53C8C;
+					};
+					4645EE32252F49BC00C53C8C = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 4645EE0E252F49B700C53C8C;
+					};
+				};
+			};
+			buildConfigurationList = 4645EE0A252F49B700C53C8C /* Build configuration list for PBXProject "Top5TrendingVenues" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4645EE06252F49B700C53C8C;
+			productRefGroup = 4645EE10252F49B700C53C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4645EE0E252F49B700C53C8C /* Top5TrendingVenues */,
+				4645EE27252F49BC00C53C8C /* Top5TrendingVenuesTests */,
+				4645EE32252F49BC00C53C8C /* Top5TrendingVenuesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4645EE0D252F49B700C53C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645EE22252F49BB00C53C8C /* LaunchScreen.storyboard in Resources */,
+				4645EE962530A52400C53C8C /* Top5VenuesCell.xib in Resources */,
+				4645EE1F252F49BB00C53C8C /* Assets.xcassets in Resources */,
+				4645EE1A252F49B700C53C8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE26252F49BC00C53C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE31252F49BC00C53C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4645EE0B252F49B700C53C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645EEA82530C99300C53C8C /* MyCustomActivityIndicator.swift in Sources */,
+				4645EE1D252F49B700C53C8C /* Top5TrendingVenues.xcdatamodeld in Sources */,
+				4645EEB02530D92800C53C8C /* AboutSegmentView.swift in Sources */,
+				4645EE952530A52400C53C8C /* Top5VenuesCell.swift in Sources */,
+				4645EE17252F49B700C53C8C /* MainViewController.swift in Sources */,
+				4645EE13252F49B700C53C8C /* AppDelegate.swift in Sources */,
+				4645EEBD2530EB8100C53C8C /* Top5TableView.swift in Sources */,
+				4645EECC2531221100C53C8C /* ApiResponseModel.swift in Sources */,
+				4645EEC7253104CE00C53C8C /* GetTop5VenuesRequest.swift in Sources */,
+				4645EEC22531046700C53C8C /* HttpRequest.swift in Sources */,
+				46960A3C253246F100ED7F4E /* VenueTableModel.swift in Sources */,
+				46960A422533414700ED7F4E /* Constants.swift in Sources */,
+				4645EEB52530E7A800C53C8C /* LabelWithPadding.swift in Sources */,
+				4645EE15252F49B700C53C8C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE24252F49BC00C53C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645EE2D252F49BC00C53C8C /* Top5TrendingVenuesTests.swift in Sources */,
+				46960A4825334D0800ED7F4E /* ApiResponseModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4645EE2F252F49BC00C53C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4645EE38252F49BC00C53C8C /* Top5TrendingVenuesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4645EE2A252F49BC00C53C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4645EE0E252F49B700C53C8C /* Top5TrendingVenues */;
+			targetProxy = 4645EE29252F49BC00C53C8C /* PBXContainerItemProxy */;
+		};
+		4645EE35252F49BC00C53C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4645EE0E252F49B700C53C8C /* Top5TrendingVenues */;
+			targetProxy = 4645EE34252F49BC00C53C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4645EE18252F49B700C53C8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4645EE19252F49B700C53C8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4645EE20252F49BB00C53C8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4645EE21252F49BB00C53C8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4645EE3A252F49BC00C53C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4645EE3B252F49BC00C53C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4645EE3D252F49BC00C53C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4645EE3E252F49BC00C53C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4645EE40252F49BC00C53C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenuesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Top5TrendingVenues.app/Top5TrendingVenues";
+			};
+			name = Debug;
+		};
+		4645EE41252F49BC00C53C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenuesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Top5TrendingVenues.app/Top5TrendingVenues";
+			};
+			name = Release;
+		};
+		4645EE43252F49BC00C53C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenuesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenuesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Top5TrendingVenues;
+			};
+			name = Debug;
+		};
+		4645EE44252F49BC00C53C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72HJ7V6CVS;
+				INFOPLIST_FILE = Top5TrendingVenuesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = reify.technology.Top5TrendingVenuesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Top5TrendingVenues;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4645EE0A252F49B700C53C8C /* Build configuration list for PBXProject "Top5TrendingVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645EE3A252F49BC00C53C8C /* Debug */,
+				4645EE3B252F49BC00C53C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4645EE3C252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645EE3D252F49BC00C53C8C /* Debug */,
+				4645EE3E252F49BC00C53C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4645EE3F252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645EE40252F49BC00C53C8C /* Debug */,
+				4645EE41252F49BC00C53C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4645EE42252F49BC00C53C8C /* Build configuration list for PBXNativeTarget "Top5TrendingVenuesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4645EE43252F49BC00C53C8C /* Debug */,
+				4645EE44252F49BC00C53C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4645EE1B252F49B700C53C8C /* Top5TrendingVenues.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4645EE1C252F49B700C53C8C /* Top5TrendingVenues.xcdatamodel */,
+			);
+			currentVersion = 4645EE1C252F49B700C53C8C /* Top5TrendingVenues.xcdatamodel */;
+			path = Top5TrendingVenues.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4645EE07252F49B700C53C8C /* Project object */;
+}
