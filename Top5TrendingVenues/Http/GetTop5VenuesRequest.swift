@@ -8,14 +8,14 @@
 import Foundation
 import CoreLocation
 
-protocol VenuesGetDelegate {
+protocol VenuesGetDelegate: class {
     func handleFetchedData(venues: [VenueModel]?)
     func didFailWithError(error: Error)
 }
 
 class GetTop5VenuesRequest: HttpRequest {
     
-    var delegate: VenuesGetDelegate?
+    weak var delegate: VenuesGetDelegate?
     
     private func prepareRequest(llParam: String) -> URLRequest {
         let getParamsString = "?v=\(Constants.HttpConnAtts.requestVersion)&limit=\(Constants.HttpConnAtts.fetchItemsLimit)&client_id=\(Constants.HttpConnAtts.clientID)&client_secret=\(Constants.HttpConnAtts.clientSecret)&ll=\(llParam)"
